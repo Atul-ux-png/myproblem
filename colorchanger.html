@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hoch{
+        display:flex;
+        justify-content:center;
+        
+    }
+    .home{
+        margin:2px;
+        background-color:black;
+        color:white;
+    }
+
+    .button{
+        display:inline-block;
+        border:2px solid blue;
+        border-width:0.1rem;
+        align-items:center;
+        padding:8px;
+        margin:2px;
+        width:24px;
+        height:24px;
+        
+        
+    }
+
+    #buttons{
+        display:flex;
+        justify-content:center;
+        padding-top:34px;
+        margin:3px;
+
+
+    }
+    
+    h1{
+        display: flex;
+        justify-content: center;
+        color:green;
+    }
+    h3{
+        display:flex;
+        justify-content:center;
+        padding:8rem;
+        color:brown;
+    }
+
+    #grey{
+        background-color:grey;
+
+    }
+
+    #white{
+        background-color:white;
+    }
+    #orange{
+        background-color:orange;
+    }
+    #green{
+        background-color:green;
+    }
+</style>
+<body>
+    <div class="hoch">
+        <button class="home" id="hom">Home</button>
+        <button class="home" id="yt">YT Channel</button>
+    </div>
+    <h1>Color switcher</h1>
+    <span id="buttons">
+     <span class="button" id="grey"></span>
+    <span class="button" id="orange"></span>
+    <span class="button" id="white"></span>
+    <span class="button" id="green"></span></span>
+
+    <h3>Click on color box to change the color</h3>
+    <script src="colorchangercode.js" defer></script>
+</body>
+</html>
