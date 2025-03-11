@@ -1,36 +1,32 @@
-function random(){
-    const number=parseInt(Math.floor(Math.random()*99)+1);
-    console.log(number);
+const guess=document.querySelector("input");
+const playagain=document.querySelector(".restart");
+const guessbt=document.querySelector("#subtn");
+function random(number){
+    number=Math.floor(Math.random()*100)+1;
     return number;
+
 }
 
-const buttons=document.querySelector("button");
-buttons.addEventListener("click",()=>{
-
-   const user= parseInt(document.querySelector("#names").value);
-   const str=parseInt(document.querySelector("#str").value);
-      
-      str.innerHTML=random();
-    
-    
-    
-    
-    if(user===str){
-        
-        const result=parseInt(document.querySelector("#res").value);
-       
-        result.innerHTML=`your guess is correct `;
-    
+let num=random();
+guessbt.addEventListener("click",()=>{
+    let userguess=parseInt(guess.value)
+    if(isNaN(userguess)){
+        alert("please enter a number");
     }
-    else {
-    result.innerHTML=`you are incorrect guess `;
-        
-    } 
-})   
+    else{
+        if(userguess===num){
+            alert("you are the chmap");
+        }else{
+            alert(`${num}`)
+        }
+    }
 
-       
-      
+})
 
-    
+playagain.addEventListener("click",()=>{
+    num="";
+    guess.value="";
+    num=random();
+    alert("game will restart")
 
-
+})

@@ -3,85 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GUESS the number</title>
+    <script src="guesscode.js" defer></script>
 </head>
 <style>
     body{
-        background-color:black;
+        background-color: black;
     }
-    #head{
-        color:red;
-        text-align:center;
-    }
-
-    #main{
+    .main{
         display:block;
-        text-align:center;
-        border:2px solid;
-        color:white; 
-        margin:2px;
-        padding:24px;
-        border-width:12px;
-      
-        width:33%;
+        width:45%;
         margin:120px auto;
-        box-shadow:4px 4px 40px white,-4px -4px 50px green,4px -4px 60px red;
+        border:2px dotted blue;
+        text-align: center;
+        background-color: beige;
     }
-    #main:hover{
-        box-shadow:inset 24px 24px 35px green,inset -24px -24px 35px orange;
-    }
-   
-    
-    
-    LABEL{
-        FONT-SIZE:23PX;
-        COLOR:YELLOW;
-    }
-    
-    input::placeholder{
-        color:red;
-     }
-     button{
-       
-        padding:2px;
-        margin-top:23px;
-        width:124px;
-        text-align:center;
-       
-        width:center;
-     }
-     #pre{
-        margin:2px;
-        color:green;
-     }
-     #remai{
-        margin-top:2px;
-        color:red
-     }
-     button:hover{
-        background-color:black;
+    #subtn{
+        background-color: black;
         color:white;
-        box-shadow:23px 2px 24px white;
-     }
-
+        width:90px;
+        height:35px;
+    }
+    .restart{
+        background-color: brown;
+        color:white;
+        width:90px;
+        height:35px;
+        margin-right:105px;
+    }
+    #guessinput{
+        height: 29px;
+        margin-bottom: 12px;
+        width:85px;
+        margin-right: 10px;
+    }
+    #score{margin-left:200px;
+    border:2px solid green;
+    height:23px;
+    padding:22px;
+    width:24px;
+    margin-top:0px;
     
+
+}
+
 </style>
 <body>
-    <h1 id="head">Number guessing game</h1>
-    <div id="main">
-        <p>Rule:You have only ten atttempt to guess the number</p>
-        <p>2:Try and guess the number betweem 1 and 100</p>
-        <h1>Guess a number</h1>
-        <label id="nam" for="names" >GUESS:</label><input  id="names" name="na" type="text" placeholder="Guess the number"><br>
-
-    <button type="submit">Guess</button>
-
-    <div id="pre">Previous guess:</div>
-    <div id="remai">Guesses remaining:::10</div>
-    <div id="result" style="color:white">YourGuess:</div>
-    <p id="str"  style="color:white"></p>
+    <div class="main">
+        <h1>Guess the Number</h1>
+        <p>Guess the number between 1 to 100</p>
+        <input type="number" id="guessinput" min="1" max="100" placeholder="Enter your guess">
+        <button type="submit" id="subtn">Guess</button><br>
+        <button class="restart">Play Again</button>
+        <p id="score">0</p>
     </div>
 
-  <script src="guesscode.js" defer></script>  
+
+
+    
 </body>
 </html>
