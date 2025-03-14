@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+<script src="calculator.js" defer></script></head>
+    <style>
+        body{
+            background-color: black;
+        }
+        *{
+            margin:0px;
+            
+            box-sizing:border-box;
+        }
+        #main{
+           border:2px solid black;
+           display:block;
+           width:7.5%;
+           margin:180px auto;
+            box-shadow: 23px 23px 23px red,-23px 23px 23px blue,-23px -23px 23px green;
+        }
+    #userinput{
+        width:112px
+    }
+    #a{
+        margin-left: 87px;
+        margin-top:-65px
+    }
+    button{
+        width:25px
+    }
+    #sub{
+        width:25px;
+    }
+    #change{
+        width:124px;
+        display:block;
+        margin:65px auto;
+        background-color: red;
+        color:white;
+        border:2px solid white;
+
+    }
+
+    #change:hover{
+        border:5px solid blue;
+        color:white;
+        box-shadow:23px 23px 23px blue,-23px 23px 23px green;
+        background-color: green;
+    }
+    </style>
+    <body>
+        <button id="change">color change</button>
+
+<div id="main">
+    <input id="userinput" type="text" placeholder="Enter your mathematics term">
+
+    
+    <div id="012"><button class="ad">0</button>
+    <button class="ad">1</button>
+    <button class="ad">2</button>
+<button class="ad">cl</button></div>
+   <div id="345"> <button id="3">3</button>
+    <button class="ad">4</button>
+    <button class="ad">5</button>
+    <div id="678"><button class="ad">6</button>
+    <button class="ad">7</button>
+    <button class="ad">8</button></div>
+    <button class="ad">9</button>
+    <button class="ad">=</button>
+    <button class="ad">--</button>
+    <div id="a"><button class="ad">+</button><br>
+        <button class="ad">*</button><br>
+        <button class="ad">%</button></div>
+</div>
+
+
+    
+
+    
+</body>
+</html>
